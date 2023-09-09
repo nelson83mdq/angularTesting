@@ -8,5 +8,6 @@ import { Subject } from 'rxjs';
 })
 export class AppComponent {
   title = 'AngularTesting';
-  
+  public menu: string[] = ['stock', 'fecha', 'registros'];
+
 }

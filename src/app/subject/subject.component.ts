@@ -10,6 +10,7 @@ export class SubjectComponent {
 
   public  aSubject = new Subject<any>();
   // creo un observable subject
+  public visible: boolean = false;
 
   @ViewChild('aButton') boton: any;
   public onClickBtn: any = this.subjectClick;  //propiedad a un metodo particular
@@ -33,6 +34,7 @@ export class SubjectComponent {
 
   changeClick(){
     console.log('Este metodo cambio, ');
+    this.visible = !this.visible;
     
   }
 

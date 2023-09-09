@@ -3,3 +3,10 @@
 <button (click)="modName()" type="">Redirect!</button>
 
 <button (click)="changeEvent()" type="">Cambiar Evento Boton!</button>
+<p></p>
+<ng-container *ngIf="visible">
+    <span>Showing this</span>
+</ng-container>
+<ng-container *ngIf="!visible">
+    <span>Showing that!</span>
+</ng-container>

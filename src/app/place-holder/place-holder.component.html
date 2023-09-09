@@ -1,0 +1,13 @@
+<ng-template #template1>
+    <h1>Esto es el template 1</h1>
+</ng-template>
+
+<ng-template #template2>
+    <span>Esto renderiza el </span>
+    <p><h1>Template 2</h1>
+</ng-template>
+<button (click)="onRender1()">Show Template 1</button>
+<button (click)="onRender2()">Show Template 2</button>
+<ng-container *ngTemplateOutlet="contenedor">
+
+</ng-container>
